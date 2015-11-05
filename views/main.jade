@@ -1,0 +1,68 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title Nodejs appka
+        link(rel='stylesheet', href='/css/bootstrap.min.css')
+        script(src='/js/jquery.min.js')
+        script(src='/js/bootstrap.min.js')
+        script(src='/js/frontend.js')
+    body
+        h1 Nodejs workshop
+        p Simple node.js + express + jade + bootstrap + mongo application
+        div#wrapper
+
+            div#userInfo.col-md-3
+                h2 User Details
+                table.table
+                    tr
+                        td.col-md-1
+                            strong Username:
+                        td#userInfoUsername
+                    tr
+                        td.col-md-1
+                            strong Email:
+                        td#userInfoEmail
+                    tr
+                        td.col-md-1
+                            strong Full Name:
+                        td#userInfoFullname
+                    tr
+                        td.col-md-1
+                            strong Age:
+                        td#userInfoAge
+                    tr
+                        td.col-md-1
+                            strong Gender:
+                        td#userInfoGender
+                    tr
+                        td.col-md-1
+                            strong Location:
+                        td#userInfoLocation
+
+
+
+            div#userList.col-md-4
+                h2 User List
+                table.table.table-striped.table-bordered
+                    thead
+                        th UserName
+                        th.col-md-3 Action
+                    tbody
+
+            div#addUser.col-md-3
+                h2 Add New User
+                p
+                    input#inputUserName.form-control(type='text', placeholder='Username')
+                p
+                    input#inputUserEmail.form-control(type='text', placeholder='Email')
+                p
+                    input#inputUserFullname.form-control(type='text', placeholder='Full Name')
+                p
+                    input#inputUserAge.form-control(type='text', placeholder='Age')
+                p
+                    input#inputUserLocation.form-control(type='text', placeholder='Location')
+                p
+                    input#inputUserGender.form-control(type='text', placeholder='Gender')
+                p
+                    button#btnAddUser.btn.btn-success Add User
